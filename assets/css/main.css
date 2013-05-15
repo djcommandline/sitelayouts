@@ -1,0 +1,267 @@
+/* fonts */
+.ProximaNovaA-Bold { 
+	font-family: ProximaNovaA-Bold;
+	font-weight: normal;
+	font-style: normal;
+}
+.ProximaNovaA-RegularIt { 
+	font-family: ProximaNovaA-RegularIt;
+	font-weight: normal;
+	font-style: normal;
+}
+.ProximaNovaS-Regular { 
+	font-family: ProximaNovaS-Regular;
+	font-weight: normal;
+	font-style: normal;
+}
+.ProximaNovaS-RegularIt { 
+	font-family: ProximaNovaS-RegularIt;
+	font-weight: normal;
+	font-style: normal;
+}
+.ProximaNovaS-Bold { 
+	font-family: ProximaNovaS-Bold;
+	font-weight: normal;
+	font-style: normal;
+}
+.ProximaNovaA-BoldIt { 
+	font-family: ProximaNovaA-BoldIt;
+	font-weight: normal;
+	font-style: normal;
+}
+.ProximaNovaS-BoldIt { 
+	font-family: ProximaNovaS-BoldIt;
+	font-weight: normal;
+	font-style: normal;
+}
+.ProximaNovaA-Regular { 
+	font-family: ProximaNovaA-Regular;
+	font-weight: normal;
+	font-style: normal;
+}
+.ProximaNova-RegularIt { 
+	font-family: ProximaNova-RegularIt;
+	font-weight: normal;
+	font-style: normal;
+}
+.ProximaNova-BoldIt { 
+	font-family: ProximaNova-BoldIt;
+	font-weight: normal;
+	font-style: normal;
+}
+.ProximaNova-Regular { 
+	font-family: ProximaNova-Regular;
+	font-weight: normal;
+	font-style: normal;
+}
+.ProximaNova-Bold { 
+	font-family: ProximaNova-Bold;
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+
+
+
+.modalwrap {
+	border: 1px solid #f0f0f0;
+	margin: 0px;
+	background: #fff;
+	width: 560px;
+	color:#333;
+	left: -5px;
+	overflow: hidden;
+	margin-bottom: 100px;
+
+	font-family: ProximaNovaS-Regular;
+	
+}
+
+.cornerlabel {
+	position: relative;
+	float: right;
+	width: 145px;
+	height: 145px;
+	overflow: visible;
+	margin-top: -145px;
+	top: 145px;
+}
+
+.single-border {
+	border: 1px solid #ff3366;
+	margin: 5px;
+	width: auto;
+	overflow: hidden;
+}
+
+
+
+.instruction {
+	text-align: center;	
+	font-size: 18px;
+}
+
+.statement {
+	margin: 40px 0 10px 45px;
+	padding: 0px;
+	width: 430px;
+	overflow: hidden;	
+}
+
+.statement span {
+	display: block;
+	line-height: 1em;
+}
+
+.catchline {
+	font-size: 68px;
+	line-height: .9em;
+	color: #ff3366;
+}
+
+.byline {
+	font-size: 40px;
+	margin: 0;
+	padding: 0;
+	line-height: 0.2em !important;
+	text-align: center !important;
+	color: #ff3366;
+}
+
+.dealline {
+	background: black;
+	height: 18px;
+	text-align: center;
+	margin: 20px 32px 9px;
+	overflow: hidden;
+	color: #fff;
+}
+
+.dealline .whiteout {
+	width: 180px;
+	background: #fff;
+	margin: 0 auto;
+	display: block;
+	height: 20px;
+	color: #000;
+	font-size: 21px;
+	font-family: ProximaNova-Bold;
+	line-height: 1em;
+	
+}
+
+.exceptionline {
+	color: #666666;
+	font-size: 14px;
+	text-align: center;
+	letter-spacing: -1px;
+	margin-bottom: 10px;
+	float: left;
+	overflow: hidden;
+	display: block;
+	line-height: 1em;
+	height: 15px;
+}
+
+.cta-btn {
+	margin: 0 auto;
+	background: #0099ff;
+	text-align: center;
+	width: 235px;
+	padding: 5px;
+	overflow: hidden;
+	color: #fff;	
+	font-family: ProximaNova-Bold;
+	
+}
+
+.doubleborder {
+	border: 1px solid #fff;
+	padding: 12px 0px;
+	display: block;
+	overflow: hidden;
+	float: left;
+	width: 99%
+}
+
+.no-style-inline {
+	float: left;
+	padding: 0px;
+	width: 100%;
+	margin: 0;
+}
+
+.no-style-inline li {
+	float: left;
+	list-style-type: none;
+	list-style-position: inside;
+	width: 130px;
+	padding-left: 35px;
+	margin: 20px 5px 0 10px;
+	font-size: 16px;
+	color: #666666;
+	background: url(/assets/img/pinkcheck.png) no-repeat;
+}
+
+.no-style-inline li b {
+	font-family: ProximaNova-Bold;
+	display: block;
+	color: #000;
+}
+
+.pinkbox {
+	background: #ff3366;
+	float: left;
+	padding: 10px 0;
+	width: 100%;
+	text-align: center;
+	margin-top: 13px;
+	color: #fff;
+}
+
+.spacer {
+	width: 3px;
+	height: 3px;
+	background: #fea3dc;
+	display: inline-block;
+	border-radius: 10px;
+	margin: 2px 13px;
+}
+
+
+.searchform {    
+	padding: 2px;
+	width: 435px;
+	height: 50px;
+	background: url('/assets/img/searchinput.png') no-repeat top left;
+	margin: 0 auto;
+	border: 0px;
+}
+
+.searchform input {
+    font-size: 18px;
+}
+
+.searchform .text-input {
+	float: left;
+	width: 305px;
+	margin-right: 6px;
+	padding: 6px;
+	margin-left: 5px;
+	margin-top: 5px;
+	background: transparent;
+	border: 0px;
+}
+
+.searchform .text-input:focus {
+    outline-width: 0;
+}
+
+.searchform .submit-btn {
+    float: left;
+}
+
+
+
