@@ -62,18 +62,25 @@
 
 
 
-
+.modal {
+	width: 100%;
+	height: 800px;
+	position: absolute !important;
+}
 
 
 .modalwrap {
 	border: 1px solid #f0f0f0;
-	margin: 0px;
+	margin: 0px auto;
+	margin-top: 210px;
 	background: #fff;
 	width: 560px;
 	color:#333;
-	left: -5px;
 	overflow: hidden;
 	margin-bottom: 100px;
+	position: absolute;
+	margin-left: -280px;
+	left: 50%;
 
 	font-family: ProximaNovaS-Regular;
 	
@@ -220,6 +227,23 @@
 	margin-top: 13px;
 	color: #fff;
 }
+
+
+.cta-btn, .image-submit-btn {
+	cursor: pointer;	
+	transition:All 1.007s ease;
+	-webkit-transition:All 1.007s ease;
+	-moz-transition:All 1.007s ease;
+	-o-transition:All 1.007s ease;
+}
+
+.cta-btn:hover, .image-submit-btn:hover {
+	cursor: pointer;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	filter: alpha(opacity=70);
+	opacity: .7;
+}
+
 
 .spacer {
 	width: 3px;

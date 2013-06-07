@@ -13,9 +13,29 @@
 
         <link rel="stylesheet" href="assets/fonts/proxima.css">
 
+        <link rel="stylesheet" href="assets/css/normalize.css">
         <link rel="stylesheet" href="assets/css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
+		<style type="text/css">
+
+			body {
+				background: url(./assets/bkgimages/tile.jpg) repeat top center;
+			}
+			#main {
+				margin: 0 auto;
+				width: 980px;
+				height: 1235px;
+				margin-bottom: 100px;
+				background: url(./assets/bkgimages/page.jpg) no-repeat top center;
+			}
+			.modal {
+				position: fixed;
+				z-index: 100;
+				top: 0;
+			}
+
+		</style>
 
     </head>    
     <body>
@@ -23,7 +43,70 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
+	<div id="wrapper">
+		
+		<div id="main">
+			
+
+
+
+		</div>
+
+	</div>
+
+
+
+	<div class="modal">
+
 		<div class="modalwrap">
+			<div class="cornerlabel"><img src="/assets/img/cornerlabel.png" alt=""></div>		
+			<div class="single-border">
+
+			<div class="statement">
+				<span class="catchline ProximaNova-Bold">GET 50% OFF</span>
+				<span class="byline ProximaNova-Bold">YOUR FIRST CANDLE</span>
+				<span class="dealline"><b class="whiteout">ONLY $13.99</b></span>
+				<span class="exceptionline">*Get your first candle for only $13.99 when you join our monthly club.</span>
+			</div>
+
+			<div class="cta-btn skyblue"><span class="doubleborder">GET YOURS NOW</span></div>
+
+			<div class="benefits">
+				<ul class="no-style-inline">
+					<li>
+						<div class="check">
+							<b>ENJOY</b>
+							Our exclusive<br>
+							seasonal scents
+						</div>
+					</li>
+					<li>
+						<div class="check">
+							<b>DISCOVER</b>
+							A stunning ring<br>
+							in every candle
+						</div>
+					</li>
+					<li>
+						<div class="check">
+							<b>APPRAISE</b>
+							Each ring worth<br>
+							$10 to $5000!
+						</div>
+					</li>
+				</ul>
+			</div>
+
+
+			<div class="pinkbox">
+				EACH CANDLE $27.99 <div class="spacer"></div> FAST SHIPPING  <div class="spacer"></div> ALL NATURAL SOY
+			</div>
+
+			</div><!-- /.single-border -->	
+		</div>	
+
+
+		<div class="modalwrap modal2" style="display: none;">
 			<div class="cornerlabel"><img src="/assets/img/cornerlabel.png" alt=""></div>		
 			<div class="single-border">
 
@@ -34,8 +117,6 @@
 				<span class="dealline"><b class="whiteout">ONLY $13.99</b></span>
 				<span class="exceptionline">*Get your first candle for only $13.99 when you join our monthly club.</span>
 			</div>
-
-			<div class="cta-btn skyblue"><span class="doubleborder">GET YOURS NOW</span></div>
 
 			<div class="searchform">
 			    <form action="#" id="search_box">
@@ -78,12 +159,16 @@
 			</div>
 
 			</div><!-- /.single-border -->	
-		</div>		
+		</div>	
 
 
+	</div>
+
+
+		<!-- MODAL PREVIEWS 
 		<img src="/assets/bkgimages/pcandle-modal1.jpg" alt="">
 		<img src="/assets/bkgimages/pcandle-modal2.jpg" alt="">
-
+		-->
 
 
         <!-- end of page scripts -->
@@ -100,6 +185,43 @@
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src='//www.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
+
+			// Smart Resize
+			(function($,sr){
+			  // debouncing function from John Hann
+			  // http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
+			  var debounce = function (func, threshold, execAsap) {
+			    var timeout;
+			    return function debounced () {
+			      var obj = this, args = arguments;
+			      function delayed () {
+			        if (!execAsap) func.apply(obj, args);
+			        timeout = null;
+			      }
+			      if (timeout)        clearTimeout(timeout);
+			      else if (execAsap)  func.apply(obj, args);
+			      timeout = setTimeout(delayed, threshold || 100);
+			    };
+			  };
+			  jQuery.fn[sr] = function(fn){  return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
+			})(jQuery,'smartresize');
+
+
+            $(document).ready( function($) {
+
+        		$('.modal').css({
+					height: $(document).height() + 'px'
+        		});
+
+				// reposition on element dimention changes
+				$(window).smartresize(function(){
+					$('.modal').css({
+						height: $(document).height() + 'px'
+					});
+				});
+
+
+            });
         </script>
     </body>
 </html>
